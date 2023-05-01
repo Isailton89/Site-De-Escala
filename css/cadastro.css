@@ -1,0 +1,60 @@
+.info-data-cadastro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9rem;
+    align-items: center;
+}
+.input-da-semana {
+    width: 27rem;
+    height: 5.8rem;
+    border: none;
+    background-color: #ffffff00;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4.8rem;
+}
+.input-da-semana:focus, .input-form:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0 0 10rem;
+    align-items: flex-start;
+    width: 32rem;
+    /**margin: 10rem 0 0 10rem;**/
+}
+.input-form{
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    border: none;
+    margin: 1rem 0;
+}
+.input-nome-operador {
+    background: rgba(11, 10, 10, 0.1);
+    border: 3px solid #A3C4F3;
+    border-radius: 10px;
+    width: 30rem;
+}
+.input-data-trabalho {
+    background: rgba(11, 10, 10, 0.1);
+    border: 3px solid #A3C4F3;
+    border-radius: 10px;
+}
+select option {
+    background-color: #8bd3cc;
+}
+.btn-enviar {
+    width: 11.2rem;
+    height: 5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #ffffff;
+    background: #0A9396;
+    border: none;
+    border-radius: 30px;
+}
+.btn-enviar:hover {
+    cursor: pointer;
+}

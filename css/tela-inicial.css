@@ -1,0 +1,81 @@
+.lista-escala {
+    margin: 7.6rem 0 9rem 11.8rem;
+
+}
+.box-escala {
+    width: 354px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 0.3rem solid #A3C4F3;
+    border-radius: 1rem;
+    min-height: 25rem;
+}
+.seta:hover{
+    cursor: pointer;
+}
+.seta {
+    width: 10.9rem;
+}
+.dados-operador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+.hora-escala {
+    width: 4.4rem;
+    height: 1.6rem;
+    background:#DEE2FF;
+    text-align: center;
+}
+.operador-escala {
+    width: 25.3rem;
+    height: 3.4rem;
+    background: #003049;
+    border-radius: 3rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 3.4rem;
+}
+.menu {
+    width: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 9rem;
+}
+.escala-tag {
+    width: 9.5rem;
+    height: 4.5rem;
+    text-align: right;
+    margin-top: 1rem;
+}
+.btn-escala {
+    width: 9.5rem;
+    height: 4.5rem;
+}
+.btn-adicionar {
+    width: 9.5rem;
+    height: 4.5rem;
+}
+.lobby {
+    text-align: center;
+    width: 100%;
+}
+.info-data {
+    display: flex;
+    justify-content: center;
+    margin-top: 9rem;
+}
+.info-da-semana {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.data-da-semana {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4.8rem;
+}
+.dia-da-semana {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4.8rem;
+}

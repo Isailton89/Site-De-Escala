@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url(/css/tela-inicial.css);
+@import url(/css/cadastro.css);
+:root {
+    font-size: 62.5%;
+}
+html, body {
+    height: auto;
+}
+body {
+    background: linear-gradient(180deg, #8EECF5 0%, #C0FFC7 100%);
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+}
