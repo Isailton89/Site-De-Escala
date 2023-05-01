@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Cadastro de nova escala</title>
+</head>
+<body>
+    <main>
+        <section class="lista-escala">
+            <div class="box-escala" id="lista-dados">
+            </div>
+        </section>
+        <section class="menu-de-interacao">
+            <div class="menu">
+                <a href="/index.html" class="escala-tag"><img src="/img/escala.svg" alt="" class="btn-escala"></a>
+                <a href="/cadastro.html" class="escala-tag"><img src="/img/adicionar.svg" alt="" class="btn-adicionar"></a>
+                <a href="#" class="escala-tag" id="btn-download"><img src="/img/download-documento.svg" alt="" class="btn-img"></a>
+                <a href="#" class="escala-tag" id="btn-limpar"><img src="/img/apagar.svg" alt="" class="btn-img"></a>
+            </div>
+        </section>
+        <section class="lobby">
+            <div class="info-data-cadastro">
+                <input type="date" class="input-da-semana">
+            </div>
+            <div class="form">
+                <label for="data-trbalho input-form">Horario:</label>
+                <input type="time" id="data-trabalho" class="input-data-trabalho input-form">
+                <label for="nome-operador input-form">Operador:</label>
+                <select name="" id="nome-operador" class="input-nome-operador input-form">
+                </select>
+                <button class="btn-enviar" type="submit" id="enviar-info">Adicionar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="/js/app.js"></script>
+</body>
+</html>
