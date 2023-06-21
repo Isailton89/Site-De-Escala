@@ -114,7 +114,7 @@ function enviarEscala3() {
         Operadores: operadoresJson,
     };
 
-    const url = 'https://isailton.pythonanywhere.com/receber-dados'
+    const url = 'https://isailton.pythonanywhere.com'
 
     fetch(url, {
         method: 'POST',
