@@ -12,7 +12,7 @@ btnLimpar.addEventListener("click", () => {
     limparLista()
 })
 btnEnviarJson.addEventListener("click", () => {
-    enviarEscala2()
+    enviarEscala3()
 })
 
 
@@ -94,4 +94,46 @@ function capturarData() {
     const transformaData = `${dia}/${mes}/${ano}`
     inputData.value = transformaData
     return transformaData
+}
+
+function enviarEscala3() {
+    const elementosDatasOperadores = listaDeOperadores.querySelectorAll(".dados-operador");
+    const operadoresJson = [];
+    elementosDatasOperadores.forEach((elementoDataOperador) => {
+        const hora = elementoDataOperador.querySelector(".hora-escala");
+        const nomeOperador = elementoDataOperador.querySelector(".operador-escala");
+        const registro = {
+            hora: hora.textContent,
+            operador: nomeOperador.textContent.trim(),
+        };
+        operadoresJson.push(registro);
+    });
+    const diaSemana = capturarData();
+    const jsonFinal = {
+        Data: diaSemana,
+        Operadores: operadoresJson,
+    };
+
+    const url = 'https://isailton.pythonanywhere.com/receber-dados';
+
+    fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(jsonFinal)
+    })
+        .then(response => {
+            if (response.ok) {
+                // Dados enviados com sucesso
+                console.log('Dados enviados com sucesso!');
+            } else {
+                // Trate possíveis erros
+                console.log('Erro ao enviar dados.');
+            }
+        })
+        .catch(error => {
+            // Trate possíveis erros
+            console.error('Erro:', error);
+        });
 }
