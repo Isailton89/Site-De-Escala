@@ -119,7 +119,8 @@ function enviarEscala3() {
     fetch(url, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': 'https://site-de-escala.vercel.app'
         },
         body: JSON.stringify(jsonFinal)
     })
